@@ -3,6 +3,7 @@ NAMESPACE = os.getenv("NAMESPACE", default='apps')
 WAIT_TIMEOUT = os.getenv("WAIT_TIMEOUT", default='10m00s')
 TYPE = os.getenv("TYPE", default='web')
 OUTPUT_TO_NULL_COMMAND = os.getenv("OUTPUT_TO_NULL_COMMAND", default=' > /dev/null ')
+allow_k8s_contexts('tap-sandbox')
 
 k8s_custom_deploy(
     'message-board',
