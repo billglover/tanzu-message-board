@@ -24,4 +24,4 @@ spec:
     git:
       url: https://github.com/billglover/tanzu-message-board
       ref:
-        branch: main
+        branch: vendor
