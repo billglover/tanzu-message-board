@@ -1,7 +1,7 @@
 import psycopg2
 import click
 from flask import current_app, g
-from psycopg2.extras import RealDictCursor
+from psycopg2-binary.extras import RealDictCursor
 
 
 def init_app(app):
